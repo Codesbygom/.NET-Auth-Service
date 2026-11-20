@@ -1,4 +1,4 @@
-Microsoft Visual Studio Solution File, Format Version 12.00
+﻿Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.2.0
 MinimumVisualStudioVersion = 10.0.40219.1
@@ -11,6 +11,12 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthService.Infrastructure", "src\AuthService.Infrastructure\AuthService.Infrastructure.csproj", "{0A1B2C3D-0000-4000-8000-000000000004}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthService.Api", "src\AuthService.Api\AuthService.Api.csproj", "{0A1B2C3D-0000-4000-8000-000000000005}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{F5706424-5552-4DDA-B266-53ED24475820}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthService.Application.Tests", "tests\AuthService.Application.Tests\AuthService.Application.Tests.csproj", "{F08126BA-5B1E-4F67-9B17-78C7117DE966}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthService.Infrastructure.Tests", "tests\AuthService.Infrastructure.Tests\AuthService.Infrastructure.Tests.csproj", "{4F02C0D0-D2E2-4CCB-B493-FF00B5A8A910}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -34,6 +40,14 @@ Global
 		{0A1B2C3D-0000-4000-8000-000000000005}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0A1B2C3D-0000-4000-8000-000000000005}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0A1B2C3D-0000-4000-8000-000000000005}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F08126BA-5B1E-4F67-9B17-78C7117DE966}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F08126BA-5B1E-4F67-9B17-78C7117DE966}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F08126BA-5B1E-4F67-9B17-78C7117DE966}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F08126BA-5B1E-4F67-9B17-78C7117DE966}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F02C0D0-D2E2-4CCB-B493-FF00B5A8A910}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F02C0D0-D2E2-4CCB-B493-FF00B5A8A910}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F02C0D0-D2E2-4CCB-B493-FF00B5A8A910}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F02C0D0-D2E2-4CCB-B493-FF00B5A8A910}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -43,5 +57,7 @@ Global
 		{0A1B2C3D-0000-4000-8000-000000000003} = {0A1B2C3D-0000-4000-8000-000000000001}
 		{0A1B2C3D-0000-4000-8000-000000000004} = {0A1B2C3D-0000-4000-8000-000000000001}
 		{0A1B2C3D-0000-4000-8000-000000000005} = {0A1B2C3D-0000-4000-8000-000000000001}
+		{F08126BA-5B1E-4F67-9B17-78C7117DE966} = {F5706424-5552-4DDA-B266-53ED24475820}
+		{4F02C0D0-D2E2-4CCB-B493-FF00B5A8A910} = {F5706424-5552-4DDA-B266-53ED24475820}
 	EndGlobalSection
 EndGlobal
