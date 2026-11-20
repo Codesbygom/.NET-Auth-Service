@@ -32,9 +32,17 @@ public class AuthenticationServiceTests
     public async Task RegisterAsync_WithNewUser_SavesUserWithUserRole()
     {
         var dto = CreateRegisterDto();
+        _passwordHasher.Hash(dto.Password).Returns("hashed-password");
 
         await _sut.RegisterAsync(dto);
 
-        await _userRepository.Received(1).CreateAsync()
+        await _userRepository.Received(1).CreateAsync(
+            Arg.Is<User>(u =>
+                u.UserName == dto.UserName &&
+                u.Email == dto.Email &&
+                u.PasswordHash == "hashed-password" &&
+                u.Roles.Count == 1 &&
+                u.Roles.Contains("User")),
+            Arg.Any<CancellationToken>());
     }
 }
